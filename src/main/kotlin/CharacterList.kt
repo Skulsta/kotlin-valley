@@ -21,7 +21,7 @@ class CharacterList {
     fun findCharacter(input: String): List<Character> {
         val result = mutableListOf<Character>()
         for (item in allPeople) {
-            if (item.name.equals(input, ignoreCase = true)) {
+            if (item.name.contains(input, ignoreCase = true)) {
                 result.add(item)
             }
         }
