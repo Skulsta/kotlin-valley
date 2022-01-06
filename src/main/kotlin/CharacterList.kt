@@ -1,4 +1,5 @@
 class CharacterList {
+    val seperatorLine = "--------------------------------------------------------------------------------"
     fun instanciatePeople(): List<Character> {
         val people = listOf(
             Character("Leah", "Cindersap Forest", "Leah's Cottage", listOf("Goat Cheese", "Salad", "Wine")),
@@ -11,7 +12,10 @@ class CharacterList {
     val allPeople = instanciatePeople()
 
     fun printAllCharacters() {
-        allPeople.map { it.printInfo() }
+        allPeople.map {
+            println(seperatorLine)
+            it.printInfo()
+        }
     }
 
     fun printAllNames() {

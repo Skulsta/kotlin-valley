@@ -1,1 +1,1 @@
-/Users/stian/Documents/projects/misc/kotlin-greeting/build/classes/kotlin/main/MainKt.class
+/Users/stian/Documents/projects/misc/kotlin-greeting/build/classes/kotlin/main/Character.class:/Users/stian/Documents/projects/misc/kotlin-greeting/build/classes/kotlin/main/CharacterList.class:/Users/stian/Documents/projects/misc/kotlin-greeting/build/classes/kotlin/main/MainKt.class
