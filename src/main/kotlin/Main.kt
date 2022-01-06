@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
                     }
             }
             }
-        println("Type a number or name to see information about that character.")
+        println("Type part of any names to see information about the matching characters.")
         println("type 'all' to show information about all characters.")
         println("Type 'exit' to quit.")
       }
