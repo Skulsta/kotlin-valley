@@ -21,21 +21,23 @@ fun main() {
             when (userInput) {
                 "exit" -> println("Exiting...")
                 "all" -> {
+                    print("\u001b[H\u001b[2J")
                     println("Showing all ${characterList.allPeople.size} characters")
                     characterList.printAllCharacters()
                     println(seperatorLine)
                 }
                 "names" -> {
+                    print("\u001b[H\u001b[2J")
                     println("Showing all ${characterList.allPeople.size} available names")
                     characterList.printAllNames()
                     println(seperatorLine)
                 }
                 else -> {
+                    print("\u001b[H\u001b[2J")
                     val resultsList = characterList.findCharacter(userInput)
                     if (resultsList.isEmpty()) {
                         println("No results found.")
                     } else {
-                        print("\u001b[H\u001b[2J")
                         println("Showing ${resultsList.size} characters:")
                         resultsList.forEach {
                             it.printInfo()
