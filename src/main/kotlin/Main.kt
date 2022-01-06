@@ -16,21 +16,26 @@ fun main() {
     while (userInput != "exit") {
         print("Enter your input: ")
         userInput = readln()
+        println(welcomeMessage)
+        println(seperatorLine)
             when (userInput) {
                 "exit" -> println("Exiting...")
                 "all" -> {
                     println("Showing all ${characterList.allPeople.size} characters")
                     characterList.printAllCharacters()
+                    println(seperatorLine)
                 }
                 "names" -> {
                     println("Showing all ${characterList.allPeople.size} available names")
                     characterList.printAllNames()
+                    println(seperatorLine)
                 }
                 else -> {
                     val resultsList = characterList.findCharacter(userInput)
                     if (resultsList.isEmpty()) {
                         println("No results found.")
                     } else {
+                        print("\u001b[H\u001b[2J")
                         println("Showing ${resultsList.size} characters:")
                         resultsList.forEach {
                             it.printInfo()
@@ -39,7 +44,5 @@ fun main() {
                     }
                 }
             }
-        println(welcomeMessage)
-        println(seperatorLine)
     }
 }
