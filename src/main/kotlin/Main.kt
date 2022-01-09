@@ -34,7 +34,7 @@ fun main() {
                 }
                 else -> {
                     print("\u001b[H\u001b[2J")
-                    val resultsList = characterList.findCharacter(userInput)
+                    val resultsList = characterList.findCharacter(userInput) + characterList.findCharacterByBestGift(userInput)
                     if (resultsList.isEmpty()) {
                         println("No results found.")
                     } else {

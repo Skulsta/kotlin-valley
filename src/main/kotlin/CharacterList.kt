@@ -62,4 +62,14 @@ class CharacterList {
         }
         return result
     }
+
+    fun findCharacterByBestGift(input: String): List<GameCharacter> {
+        val result = mutableListOf<GameCharacter>()
+        for (person in allPeople) {
+            if (person.bestGifts.contains(input.replaceFirstChar { it.uppercaseChar() })) {
+                result.add(person)
+            }
+        }
+        return result
+    }
 }
